@@ -1,43 +1,504 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazare restaurant</title>
+    <style>
+      body{
+    background-color: teal;
+    margin: 0px;
+}
 
-  <title>My site web</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+nav {
+    background-color: black;
+    border-bottom: 5px solid #6f6f6f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5cm;
+}
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+.liens a {
+color: white;
+text-decoration: none;
+border-bottom: 1px solid white;
+padding-bottom: 7px;
+margin-right: 15px;
+}
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+header {
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1cm;
+    color: white;
+    font-weight: bold;
+}
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+header h4 {
+    display: flex;
+    margin-top: -0.6cm;
+    border-bottom: 1px solid white;
+    padding-bottom: 1px;
+    font-size: 20px;
+    font-weight: bold;
+}
 
-  <!-- =======================================================
-  * Template Name: MyResume - v3.0.0
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+header h1 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+header button {
+    height: 1.2cm;
+    width: 3.2cm;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button{
+    font-size: 20px;
+}
+
+
+
+nav h1 {
+    color: white;
+    margin-right: 325px;
+}
+
+nav .liens a:hover {
+    background-color: white;
+    border-radius: 10px;
+    color: red;
+    border: 15px solid white;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.produits {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.article1 {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5cm;
+}
+
+.article1 p {
+    display: flex;
+    margin-top: -2cm;
+    font-size: 18px;
+}
+
+.teste1 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 8cm;
+    width: 10.5cm;
+    background-color: black;
+    color: white;
+    padding-left: 15px;
+}
+
+
+.teste1 h5 {
+    font-size: 30px;
+    
+}
+
+.image1 img {
+    height: 7.5cm;
+    margin-top: 5px;
+
+}
+
+/* article 2 */
+
+
+.article2 {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.8cm;
+}
+
+.article2 p {
+    display: flex;
+    margin-top: -2cm;
+    font-size: 18px;
+}
+
+.teste2 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 8cm;
+    width: 10.5cm;
+    background-color: black;
+    color: white;
+    padding-left: 15px;
+}
+
+
+.teste2 h5 {
+    font-size: 25px;
+    
+}
+
+.image2 img {
+    height: 7.5cm;
+    margin-top: 5px;
+
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-left: 2.5cm;
+    padding-bottom: 1.5cm;
+    padding-top: 20px;
+    justify-content: center;
+    margin-top: 2cm;
+    border-top: solid rgb(151, 47, 47) 5px;
+}
+
+.service0 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -5px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.service1 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1.5cm;
+}
+
+footer h1 {
+    display: flex;
+    padding-bottom: 5px;
+    border-bottom: solid white 1px;
+    width: 5cm;
+    font-size: 35px;
+}
+
+#cont {
+    color: silver;
+    font-size: 18px;
+}
+
+.service1 .toe {
+    display: flex;
+    margin-top: -1px;
+}
+
+.service1 h3 {
+   
+    display: flex;
+    margin-bottom: -8px;
+}
+
+/* kkkkkkkkkkkkkkkkk */
+
+@media screen and (max-width: 680px){
+    body{
+        background-color: teal;
+        margin: 0px;
+    }
+    
+    nav {
+        background-color: black;
+        border-bottom: 5px solid #6f6f6f;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3cm;
+        flex-direction: column;
+        
+    }
+    
+    .liens a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    padding-bottom: 7px;
+    margin-right: 15px;
+    }
+    
+    header {
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 1cm;
+        color: white;
+        font-weight: bold;
+    }
+    
+    header h4 {
+        display: flex;
+        margin-top: -0.6cm;
+        border-bottom: 1px solid white;
+        padding-bottom: 1px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    header h1 {
+        font-size: 35px;
+        font-weight: bold;
+    }
+    
+    header button {
+        height: 1.2cm;
+        width: 3.2cm;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+    }
+    
+    button{
+        font-size: 20px;
+    }
+    
+    
+    
+    nav h1 {
+        color: white;
+        margin-right: 25px;
+    }
+    
+    nav .liens a:hover {
+        background-color: white;
+        border-radius: 10px;
+        color: red;
+        border: 15px solid white;
+        margin-right: 15px;
+        font-weight: bold;
+    }
+    
+    .produits {
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .article1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5cm;
+    }
+    
+    .article1 p {
+        display: flex;
+        margin-top: -2cm;
+        font-size: 18px;
+    }
+    
+    .teste1 {
+        display: flex;
+        flex-wrap: wrap;
+        height: 8cm;
+        width: 6cm;
+        background-color: black;
+        color: white;
+        padding-left: 15px;
+    }
+    
+    
+    .teste1 h5 {
+        font-size: 30px;
+        
+    }
+    
+    .image1 img {
+        height: 7.5cm;
+        margin-top: 5px;
+    
+    }
+    
+    /* article 2 */
+    
+    
+    .article2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.8cm;
+    }
+    
+    .article2 p {
+        display: flex;
+        margin-top: -2cm;
+        font-size: 18px;
+    }
+    
+    .teste2 {
+        display: flex;
+        flex-wrap: wrap;
+        height: 8cm;
+        width: 6cm;
+        background-color: black;
+        color: white;
+        padding-left: 15px;
+    }
+    
+    
+    .teste2 h5 {
+        font-size: 25px;
+        
+    }
+    
+    .image2 img {
+        height: 7.5cm;
+        margin-top: 5px;
+    
+    }
+    
+    footer {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding-left: 2.5cm;
+        padding-bottom: 1.5cm;
+        padding-top: 20px;
+        justify-content: center;
+        margin-top: 2cm;
+        border-top: solid rgb(151, 47, 47) 5px;
+    }
+    
+    .service0 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: -5px;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    
+    .service1 {
+        display: flex;
+        flex-direction: column;
+        margin-right: 1.5cm;
+    }
+    
+    footer h1 {
+        display: flex;
+        padding-bottom: 5px;
+        border-bottom: solid white 1px;
+        width: 5cm;
+        font-size: 35px;
+    }
+    
+    #cont {
+        color: silver;
+        font-size: 18px;
+    }
+    
+    .service1 .toe {
+        display: flex;
+        margin-top: -1px;
+    }
+    
+    .service1 h3 {
+       
+        display: flex;
+        margin-bottom: -8px;
+    }
+}
+  </style>
 </head>
+<body>
+    <Nav>
+    <h1> WEB RESTAURANT </h1>
+        <div class="liens">
+            <a href="index.html">ACCUEIL</a>
+            <a href="#prod">PRODUIT</a>
+            <a href="#cont">CONTACT</a>
+        </div>
+    </Nav>
 
-<body bgcolor="silver">
+    <header>
+        <h1> WEB RESTAURANT </h1>
+        <H4> LE MEILLEUR RESTAURANT DE COTONOU </H4>
+        <button>Pacourir</button>
+    </header>
+    
+    <section class="produits" id="prod">
+        <div class="article1">
+            <div class="teste1">
+                <h5>Nos valeurs</h5> 
+                   <p>Mangez sainement mais delicieusement.Nos clients sont des rois. Nos cliennts sont nos patrons.</p> 
+            </div>
+            <div class="image1">
+                <img src="blog-img-1.jpg" alt="">
+            </div>
+        </div>
 
- Bonjour
+        <div class="article2">
+            <div class="teste2">
+                <h5>Nos recettes</h5>
+                    <p>Nous mettons à votre diposition les recettes de nos plats les plus delicieux.</p> 
+            </div>
+            <div class="image2">
+                <img src="blog-img-2.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <h1>Nos Service</h1>
+        <div class="service0">
+                <div class="service1">
+                     <h3>Livraison gratuite</h3>
+                     <P>Profitez des réductions et bons plats. <br>
+                    Le meilleur des restaurants de cotonou. <br> Simple, sécurisé, rapide et pas cher</P>
+                </div>
+            <div class="service1">
+                <h3>Paiement en ligne</h3>
+                <P>Commander vos plats et payé en ligne <br> c'est pour bientôt à WEB RESTAURANT</P>
+            </div>
+            <div class="service1">
+                
+                <h3>Aimé ou remboursé</h3>
+                
+                <div class="toe">
+                <P>
+                <Ul>
+                   <li>Resto</li> 
+                   <li>Bar</li> 
+                   <li>Pizzeria</li> 
+                   <li>Jeux</li> 
+                </Ul> 
+                </P>
+                </div>
+            </div>
+            
+        </div> 
+        <div toe2>  
+        <p id="cont">Contact: 66 04 74 36 © 2022 WEB RESTAURANT</p> 
+        </div>
+    </footer>
+
 </body>
-
 </html>
